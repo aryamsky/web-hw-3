@@ -66,16 +66,42 @@ function hottestDays (tempratures , minvalue ){
 
 
 
-let quizes = prompt(" your quizes grades ?");
+// let quizes = prompt(" your quizes grades ?");
 
-let midterm = prompt(" your midterm grades ?");
+// let midterm = prompt(" your midterm grades ?");
 
-let finals = prompt(" your final exam grades ?");
+// let finals = prompt(" your final exam grades ?");
 
-let oral = prompt(" your oral grades ?");
+// let oral = prompt(" your oral grades ?");
 
-let total=(quizes+midterm+finals+oral);
 
+
+let quize= document.getElementById.quizes.value;
+let middterm= document.getElementById.middterm.value;
+let final= document.getElementById.finals.value;
+let oraal= document.getElementById.oral.value;
+
+let total=( quize+middterm+final+oraal);
+
+
+// let total=(document.getElementById.quizes.value + document.getElementById.midterm.value +document.getElementById.finals.value + document.getElementById.oral.value );
+
+
+if( total >= 90){
+    document.getElementById.score.innerHTML=("you got A")
+}else 
+
+if(total >= 90){
+    document.getElementById.score.innerHTML=("you got A");
+}else if (total >= 80){
+    document.getElementById.score.innerHTML=("you got B");
+}else if ( total>=70){
+    document.getElementById.score.innerHTML=("you got C");
+}else if(total >= 60){
+    document.getElementById.score.innerHTML= ("you got D");
+}else{
+    document.getElementById.score.innerHTML= ("you got F");
+}
 
 
 
